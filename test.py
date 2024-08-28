@@ -77,7 +77,7 @@ def test(classifier, test_set):
 	y_pred = classifier.predict(test_set[0])
 	y_true = test_set[1]  #labels
 
-	classification_report(y_true=y_true, y_pred=y_pred)
+	print(classification_report(y_true=y_true, y_pred=y_pred))
 	
 	precision = precision_score(y_true, y_pred, average='micro')
 	recall = recall_score(y_true, y_pred, average='micro')
